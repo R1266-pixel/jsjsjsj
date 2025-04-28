@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Panel de Cliente</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #28a745, #1c7430);
+            color: #ffffff;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            background-color: #ffffff;
+            color: #333333;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #1c7430;
+        }
+        .navbar {
+            background-color: #333333;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cliente Panel</a>
+            <a href="/logout" class="btn btn-danger">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Panel de Cliente</h1>
+        <div class="row text-center">
+            <!-- Explorar Productos -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <i class="bi bi-search h1 mb-3 text-success"></i>
+                    <h5 class="card-title">Explorar Productos</h5>
+                    <p class="card-text">Busca y compra los productos que necesitas.</p>
+                    <a href="/producto" class="btn btn-primary">Explorar</a>
+                </div>
+            </div>
+            <!-- Historial de Compras -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <i class="bi bi-journal-text h1 mb-3 text-success"></i>
+                    <h5 class="card-title">Historial de Compras</h5>
+                    <p class="card-text">Consulta las compras que has realizado anteriormente.</p>
+                    <a href="/historial_compras" class="btn btn-primary">Acceder</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
